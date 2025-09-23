@@ -13,7 +13,7 @@
     
     <section>
         <h2>📜 Resume</h2>
-        <p><a href="SamOakescyberResume.pdf" download>Download Resume (PDF)</a></p>
+        <p><a href="SamOakescyberResume.pdf" download="Sam_Oakes_Resume.pdf" id="downloadBtn">Download Resume (PDF)</a></p>
         <iframe src="SamOakescyberResume.pdf" width="100%" height="500px"></iframe>
     </section>
 
@@ -73,5 +73,18 @@
     <footer>
         <p>© 2025 Sam Oakes</p>
     </footer>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+            // Force download by creating a temporary link
+            const link = document.createElement('a');
+            link.href = 'SamOakescyberResume.pdf';
+            link.download = 'Sam_Oakes_Resume.pdf';
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
 </body>
 </html>
