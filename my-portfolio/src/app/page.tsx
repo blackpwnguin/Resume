@@ -4,13 +4,12 @@ const experience = [
     company: "LDI Connect",
     period: "May 2025 – August 2025",
     details: [
-      "Provided Tier 3/4 technical support for advanced cloud, endpoint, and network security operations across client environments.",
-      "Deployed and maintained Unifi firewalls and switches, ensuring secure, scalable physical network infrastructure for SMB and enterprise clients.",
-      "Delivered executive briefings on strategic AI integration into LDI's internal infrastructure and business workflows—covering platform selection, risk analysis, deployment architecture, and model testing.",
-      "Designed secure, compliant AI system architectures, including sandbox environments for LLM evaluation, workflow automation integration, and model governance.",
-      "Led a separate executive session on Microsoft Lighthouse implementation, positioning it as a centralized management and visibility tool for client environments.",
-      "Participated in vendor vetting and sales calls, contributing to strategic evaluation of third-party solutions for security, interoperability, and business alignment.",
-      "Supported enterprise cloud security across Microsoft 365, Datto, Huntress, SentinelOne, and MimeCast ecosystems, aligning technical delivery with compliance and risk management requirements."
+      "Drafted and presented executive briefings on AI adoption, risk, and compliance strategies.",
+      "Conducted research and led the transition to Microsoft 365 Lighthouse (GDAP setup, baseline configurations, JSON policy customization).",
+      "Implemented compliance standards and security baselines for SMB clients, ensuring HIPAA and SOC 2 adherence.",
+      "Configured and managed tools including ConnectWise PSA, Huntress, Datto BCDR, SentinelOne, ITGlue, KaseyaOne, Cisco Meraki, Unifi, and Proofpoint.",
+      "Utilized compliance platforms like Vanta to manage client GRC controls and reporting.",
+      "Supported on-site installations, configuring network hardware/software and ensuring security hardening."
     ]
   },
   {
@@ -80,17 +79,17 @@ const certifications = [
 const projects = [
   {
     name: "RiskAI: AI Risk Assessment Agent",
-    description: "Proof-of-concept AI agent for assessing a company&#39;s risk posture regarding emerging technologies. Uses a local LLM and a curated PDF corpus for Retrieval Augmented Generation (RAG) and actionable advice. [GitHub]",
+    description: "Proof-of-concept AI agent for assessing a company's risk posture regarding emerging technologies. Uses a local LLM and a curated PDF corpus for Retrieval Augmented Generation (RAG) and actionable advice.",
     link: "https://github.com/Blackpenguin46/riskai"
   },
   {
     name: "CyberNex Sentinel",
-    description: "Cybersecurity knowledge base and retrieval system with vector database integration. Features corpus building, FAISS indexing, and intelligent document retrieval for security research and analysis. [GitHub]",
+    description: "Cybersecurity knowledge base and retrieval system with vector database integration. Features corpus building, FAISS indexing, and intelligent document retrieval for security research and analysis.",
     link: "https://github.com/Blackpenguin46/-cybernex-sentinel"
   },
   {
     name: "Hash Comparer",
-    description: "Python tool for cryptographic analysis that compares hash outputs of three text files (two identical, one modified) to examine avalanche effect and demonstrate cryptographic hash function properties. [GitHub]",
+    description: "Python tool for cryptographic analysis that compares hash outputs of three text files (two identical, one modified) to examine avalanche effect and demonstrate cryptographic hash function properties.",
     link: "https://github.com/Blackpenguin46/Hash-comparer"
   },
   {
@@ -105,7 +104,7 @@ const projects = [
   },
   {
     name: "AI in Warfare Paper",
-    description: "Research on AI in modern warfare (HTB, CTF, and cyber defense context)",
+    description: "Research ethical implications of AI in modern warfare and governing a future solution.",
     link: "/papers/AIinwarfare[7424059].pdf"
   },
   {
