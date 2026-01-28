@@ -113,6 +113,12 @@ const projects = [
     techStack: []
   },
   {
+    name: "SEET International Tech Conference Paper",
+    description: "Published research paper in the SEET conference proceedings (Page 679).",
+    link: "/papers/SEET_publication.pdf",
+    techStack: []
+  },
+  {
     name: "Usable Security and Privacy of Cryptocurrency in the Quantum Age",
     description: "Research paper on enhancing usable security and privacy of cryptocurrencies in the quantum era.",
     link: "/papers/Enhancing Usable Security and Privacy of Cryptocurrencies in the Quantum Age.pdf",
@@ -154,7 +160,7 @@ const education = [
 
 export default function Home() {
   return (
-    <div className="space-y-24 max-w-4xl mx-auto">Passionate about GRC, risk management, and helping people and businesses thrive in the digital age. I specialize in code-first solutions (primarily Python) and custom APIs, avoiding low-code platforms. Balancing academic excellence with Division 1 athletics. Deeply interested in philosophy, with Martin Heidegger&#39;s <em>Being and Time</em> being my favorite book.</p>
+    <div className="space-y-24 max-w-4xl mx-auto">
       {/* Hero/About Section */}
       <section className="mb-20" id="hero">
         <div className="bg-gray-900 border border-gray-800 rounded-2xl p-10 shadow-2xl flex flex-col md:flex-row md:items-center md:justify-between">
