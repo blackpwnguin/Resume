@@ -1,5 +1,16 @@
 const experience = [
   {
+    title: "AI Automation Engineer",
+    company: "MSP",
+    period: "2025–Present",
+    details: [
+      "Building AI Automations using Azure, focusing on code-first solutions (Python) and custom APIs rather than low-code platforms.",
+      "Developed a DB cross-referencing agent and automated documentation systems.",
+      "Created an automated agent to help dispatch technicians more efficiently.",
+      "Leveraging 4 years of IT experience to drive operational efficiency through automation."
+    ]
+  },
+  {
     title: "Cloud Services Intern",
     company: "LDI Connect",
     period: "May 2025 – August 2025",
@@ -79,38 +90,45 @@ const certifications = [
 const projects = [
   {
     name: "RiskAI: AI Risk Assessment Agent",
-    description: "Proof-of-concept AI agent for assessing a company's risk posture regarding emerging technologies. Uses a local LLM and a curated PDF corpus for Retrieval Augmented Generation (RAG) and actionable advice.",
-    link: "https://github.com/Blackpenguin46/riskai"
+    description: "A full-stack application that uses AI to automate cybersecurity risk assessments, identify compliance gaps (GDPR, NIST, ISO), and provide an interactive AI consultant for remediation strategies. Features algorithmic bias detection and mathematical modeling for risk quantification.",
+    link: "https://github.com/Blackpenguin46/riskai",
+    techStack: ["Python", "FastAPI", "Next.js", "Docker", "NLP"]
   },
   {
-    name: "CyberNex Sentinel",
-    description: "Cybersecurity knowledge base and retrieval system with vector database integration. Features corpus building, FAISS indexing, and intelligent document retrieval for security research and analysis.",
-    link: "https://github.com/Blackpenguin46/-cybernex-sentinel"
+    name: "Archangel: Autonomous Red/Blue Team Agents",
+    description: "Research framework for developing autonomous AI agents capable of performing offensive and defensive cybersecurity operations using Reinforcement Learning and Large Language Models. Features multi-agent orchestration and contextual augmentation.",
+    link: "",
+    techStack: ["Python", "PyTorch", "Hugging Face", "Reinforcement Learning"]
   },
   {
-    name: "Hash Comparer",
-    description: "Python tool for cryptographic analysis that compares hash outputs of three text files (two identical, one modified) to examine avalanche effect and demonstrate cryptographic hash function properties.",
-    link: "https://github.com/Blackpenguin46/Hash-comparer"
+    name: "AI-ADVISOR: RAG-based Technical Consultant",
+    description: "RAG-based knowledge management system acting as an expert AI consultant. Ingests multi-format data (PDFs, videos) to provide context-aware advice on software architecture and AI implementation. Integrates with Ollama and utilizes MCP.",
+    link: "",
+    techStack: ["Python", "Streamlit", "Ollama", "Selenium", "MCP"]
   },
   {
     name: "MCM/ICM Paper on Global Governance for Cybersecurity",
     description: "Submitted for the MCM/ICM International Math Contest.",
-    link: "/papers/2025 MCM-ICM Final Submission.pdf"
+    link: "/papers/2025 MCM-ICM Final Submission.pdf",
+    techStack: []
   },
   {
     name: "Usable Security and Privacy of Cryptocurrency in the Quantum Age",
     description: "Research paper on enhancing usable security and privacy of cryptocurrencies in the quantum era.",
-    link: "/papers/Enhancing Usable Security and Privacy of Cryptocurrencies in the Quantum Age.pdf"
+    link: "/papers/Enhancing Usable Security and Privacy of Cryptocurrencies in the Quantum Age.pdf",
+    techStack: []
   },
   {
     name: "AI in Warfare Paper",
     description: "Research ethical implications of AI in modern warfare and governing a future solution.",
-    link: "/papers/AIinwarfare[7424059].pdf"
+    link: "/papers/AIinwarfare[7424059].pdf",
+    techStack: []
   },
   {
     name: "Quantum Computing Implementation for Fortune 500 Insurance",
     description: "Advisory paper on implementing quantum computing into a Fortune 500 insurance company.",
-    link: "https://github.com/Blackpenguin46/quantum-paper/blob/master/quantumpaper/quantumlockdownreport.pdf"
+    link: "https://github.com/Blackpenguin46/quantum-paper/blob/master/quantumpaper/quantumlockdownreport.pdf",
+    techStack: []
   }
 ];
 
@@ -136,7 +154,7 @@ const education = [
 
 export default function Home() {
   return (
-    <div className="space-y-24 max-w-4xl mx-auto">
+    <div className="space-y-24 max-w-4xl mx-auto">Passionate about GRC, risk management, and helping people and businesses thrive in the digital age. I specialize in code-first solutions (primarily Python) and custom APIs, avoiding low-code platforms. Balancing academic excellence with Division 1 athletics. Deeply interested in philosophy, with Martin Heidegger&#39;s <em>Being and Time</em> being my favorite book.</p>
       {/* Hero/About Section */}
       <section className="mb-20" id="hero">
         <div className="bg-gray-900 border border-gray-800 rounded-2xl p-10 shadow-2xl flex flex-col md:flex-row md:items-center md:justify-between">
@@ -145,7 +163,7 @@ export default function Home() {
             <p className="text-2xl text-gray-300 mb-6">Cybersecurity Undergrad | D1 Wrestler | Club Founder | Networking Engineer</p>
             <p className="max-w-xl text-gray-300 mb-6">President and founder of my university&#39;s cybersecurity club, Welch corporate structure tech team member, and founder of <a href="https://cybernexacademy.com" className="text-accent-purple underline">cybernexacademy.com</a>. Passionate about GRC, risk management, and helping people and businesses thrive in the digital age. Balancing academic excellence with Division 1 athletics. Deeply interested in philosophy, with Martin Heidegger&#39;s <em>Being and Time</em> being my favorite book.</p>
             <div className="flex gap-4 mb-2 flex-wrap">
-              <a href="/SamOakescyberResume.pdf" download className="btn-accent">Download Resume</a>
+              <a href="/SamuelOakesResume.pdf" download className="btn-accent">Download Resume</a>
               <a href="https://github.com/Blackpenguin46" target="_blank" rel="noopener" className="btn-outline">GitHub</a>
               <a href="https://cybernexacademy.com" target="_blank" rel="noopener" className="btn-outline">cybernexacademy.com</a>
             </div>
@@ -197,9 +215,18 @@ export default function Home() {
                 <div>
                   <h4 className="text-xl font-semibold text-accent-purple mb-2">{project.name}</h4>
                   <p className="text-gray-300 mb-4">{project.description}</p>
+                  {project.techStack && project.techStack.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.techStack.map(tech => (
+                        <span key={tech} className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded border border-gray-700">{tech}</span>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 {project.link && (
-                  <a href={project.link} className="text-neon underline text-sm hover:opacity-80 transition mt-auto" target="_blank" rel="noopener">View PDF</a>
+                  <a href={project.link} className="text-neon underline text-sm hover:opacity-80 transition mt-auto" target="_blank" rel="noopener">
+                    {project.link.endsWith('.pdf') ? 'View PDF' : 'View Project'}
+                  </a>
                 )}
               </div>
             ))}
