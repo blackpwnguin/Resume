@@ -85,11 +85,6 @@ const certifications = [
 
 const projects = [
   {
-    name: "RiskAI: AI Risk Assessment Agent",
-    description: "A full-stack application that uses AI to automate cybersecurity risk assessments, identify compliance gaps (GDPR, NIST, ISO), and provide an interactive AI consultant for remediation strategies. Features algorithmic bias detection and mathematical modeling for risk quantification.",
-    link: "https://github.com/Blackpenguin46/riskai",
-const projects = [
-  {
     name: "Cybernex Academy",
     description: "Founded and operate a cybersecurity education platform to help students learn and grow in the field.",
     link: "https://cybernexacademy.com",
@@ -97,6 +92,11 @@ const projects = [
   },
   {
     name: "RiskAI: AI Risk Assessment Agent",
+    description: "A full-stack application that uses AI to automate cybersecurity risk assessments, identify compliance gaps (GDPR, NIST, ISO), and provide an interactive AI consultant for remediation strategies. Features algorithmic bias detection and mathematical modeling for risk quantification.",
+    link: "https://github.com/Blackpenguin46/riskai",
+    techStack: ["Python", "FastAPI", "Next.js", "Docker", "NLP"]
+  },
+  {
     name: "Archangel: Autonomous Red/Blue Team Agents",
     description: "Research framework for developing autonomous AI agents capable of performing offensive and defensive cybersecurity operations using Reinforcement Learning and Large Language Models. Features multi-agent orchestration and contextual augmentation.",
     link: "",
