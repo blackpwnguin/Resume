@@ -4,10 +4,11 @@ const experience = [
     company: "MSP",
     period: "2025–Present",
     details: [
-      "Building AI Automations using Azure, focusing on code-first solutions (Python) and custom APIs rather than low-code platforms.",
+      "Build enterprise-level AI workflow automations within cloud platforms (Azure, AWS) to streamline business processes.",
+      "Utilize services like Power Automate, Azure Document Intelligence, and Blob Storage alongside code-first Python solutions.",
       "Developed a DB cross-referencing agent and automated documentation systems.",
       "Created an automated agent to help dispatch technicians more efficiently.",
-      "Leveraging 4 years of IT experience to drive operational efficiency through automation."
+      "Leveraging 4 years of IT experience to drive operational efficiency throughout the organization."
     ]
   },
   {
@@ -34,11 +35,6 @@ const experience = [
       "Administer and optimize routing protocols, switch provisioning, and network hardening procedures to support 24/7 connectivity and secure internal services.",
       "Previously served as an Audio Visual Junior Engineer (2023–2025), managing AV deployments, smart classroom tech integration, and campus-wide device configuration before promotion to Networking Engineer."
     ]
-  },
-  {
-    title: "Founder & Owner of Cybernex Academy",
-    period: "2024–Present",
-    details: ["Founded and operate a cybersecurity education platform."]
   },
   {
     title: "Founder & President of the SHU Cybersecurity Club",
@@ -92,9 +88,15 @@ const projects = [
     name: "RiskAI: AI Risk Assessment Agent",
     description: "A full-stack application that uses AI to automate cybersecurity risk assessments, identify compliance gaps (GDPR, NIST, ISO), and provide an interactive AI consultant for remediation strategies. Features algorithmic bias detection and mathematical modeling for risk quantification.",
     link: "https://github.com/Blackpenguin46/riskai",
-    techStack: ["Python", "FastAPI", "Next.js", "Docker", "NLP"]
+const projects = [
+  {
+    name: "Cybernex Academy",
+    description: "Founded and operate a cybersecurity education platform to help students learn and grow in the field.",
+    link: "https://cybernexacademy.com",
+    techStack: []
   },
   {
+    name: "RiskAI: AI Risk Assessment Agent",
     name: "Archangel: Autonomous Red/Blue Team Agents",
     description: "Research framework for developing autonomous AI agents capable of performing offensive and defensive cybersecurity operations using Reinforcement Learning and Large Language Models. Features multi-agent orchestration and contextual augmentation.",
     link: "",
@@ -151,11 +153,11 @@ const achievements = [
 ];
 
 const skills = [
-  "Datto", "Huntress", "M365 suite", "SentinelOne", "MimeCast", "Unifi firewalls/switches", "Microsoft Lighthouse", "Physical/virtual networking", "Executive briefings", "Client support"
+  "Azure", "AWS", "AI Automations", "Python", "Cyber Frameworks", "Datto", "Huntress", "M365 suite", "SentinelOne", "MimeCast", "Unifi firewalls/switches", "Microsoft Lighthouse", "Physical/virtual networking", "Executive briefings", "Client support"
 ];
 
 const education = [
-  "B.Sc. in Cybersecurity (Undergraduate)"
+  "B.S. in Cybersecurity; May 2026"
 ];
 
 export default function Home() {
@@ -166,8 +168,8 @@ export default function Home() {
         <div className="bg-gray-900 border border-gray-800 rounded-2xl p-10 shadow-2xl flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-5xl md:text-6xl font-extrabold text-neon mb-4">Sam Oakes</h2>
-            <p className="text-2xl text-gray-300 mb-6">Cybersecurity Undergrad | D1 Wrestler | Club Founder | Networking Engineer</p>
-            <p className="max-w-xl text-gray-300 mb-6">President and founder of my university&#39;s cybersecurity club, Welch corporate structure tech team member, and founder of <a href="https://cybernexacademy.com" className="text-accent-purple underline">cybernexacademy.com</a>. Passionate about GRC, risk management, and helping people and businesses thrive in the digital age. Balancing academic excellence with Division 1 athletics. Deeply interested in philosophy, with Martin Heidegger&#39;s <em>Being and Time</em> being my favorite book.</p>
+            <p className="text-2xl text-gray-300 mb-6">Junior Security Analyst | Lead AI Engineer | Cybersecurity Undergrad | D1 Wrestler | Club Founder</p>
+            <p className="max-w-xl text-gray-300 mb-6">President and founder of my university&#39;s cybersecurity club, Welch corporate structure tech team member, and founder of <a href="https://cybernexacademy.com" className="text-accent-purple underline">cybernexacademy.com</a>. Passionate about GRC, risk management, and helping people and businesses thrive in the digital age. I specialize in code-first solutions (primarily Python) and custom APIs, avoiding low-code platforms. Balancing academic excellence with Division 1 athletics. Deeply interested in philosophy, with Martin Heidegger&#39;s <em>Being and Time</em> being my favorite book.</p>
             <div className="flex gap-4 mb-2 flex-wrap">
               <a href="/SamuelOakesResume.pdf" download className="btn-accent">Download Resume</a>
               <a href="https://github.com/Blackpenguin46" target="_blank" rel="noopener" className="btn-outline">GitHub</a>
