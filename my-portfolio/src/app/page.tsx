@@ -93,7 +93,7 @@ const projects = [
   {
     name: "RiskAI: AI Risk Assessment Agent",
     description: "A full-stack application that uses AI to automate cybersecurity risk assessments, identify compliance gaps (GDPR, NIST, ISO), and provide an interactive AI consultant for remediation strategies. Features algorithmic bias detection and mathematical modeling for risk quantification.",
-    link: "https://github.com/Blackpenguin46/riskai",
+    link: "https://github.com/blackpwnguin/riskai",
     techStack: ["Python", "FastAPI", "Next.js", "Docker", "NLP"]
   },
   {
@@ -135,7 +135,7 @@ const projects = [
   {
     name: "Quantum Computing Implementation for Fortune 500 Insurance",
     description: "Advisory paper on implementing quantum computing into a Fortune 500 insurance company.",
-    link: "https://github.com/Blackpenguin46/quantum-paper/blob/master/quantumpaper/quantumlockdownreport.pdf",
+    link: "https://github.com/blackpwnguin/quantum-paper/blob/master/quantumpaper/quantumlockdownreport.pdf",
     techStack: []
   }
 ];
@@ -172,7 +172,7 @@ export default function Home() {
             <p className="max-w-xl text-gray-300 mb-6">Lead AI Engineer and Junior Security Analyst with a background in networking and IT helpdesk. President and founder of my university&#39;s cybersecurity club, Welch corporate structure tech team member, and I built a <a href="https://cybernexacademy.com" className="text-accent-purple underline">platform</a> to help other people get into cybersecurity. Passionate about GRC, risk management, and helping people and businesses thrive in the digital age. I specialize in code-first solutions (primarily Python) and custom APIs, avoiding low-code platforms. Balancing academic excellence with Division 1 athletics. Deeply interested in philosophy, with Martin Heidegger&#39;s <em>Being and Time</em> being my favorite book.</p>
             <div className="flex gap-4 mb-2 flex-wrap">
               <a href="/SamuelOakesResume.pdf" download className="btn-accent">Download Resume</a>
-              <a href="https://github.com/Blackpenguin46" target="_blank" rel="noopener" className="btn-outline">GitHub</a>
+              <a href="https://github.com/blackpwnguin" target="_blank" rel="noopener" className="btn-outline">GitHub</a>
               <a href="https://cybernexacademy.com" target="_blank" rel="noopener" className="btn-outline">cybernexacademy.com</a>
             </div>
           </div>
